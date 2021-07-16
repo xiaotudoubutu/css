@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .clearfix:before,
+        .clear:after {
+            display: table;
+            content: "";
+        }
+
+        .clearfix:after {
+            clear: both
+        }
+
+        .clearfix {
+            *zoom: 1
+        }
+
+        input {
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header {
+            height: 100px;
+            background-color: whitesmoke;
+            overflow: hidden;
+        }
+
+        nav {
+            width: 1366px;
+            height: 42px;
+            margin: 26px auto;
+            background-color: whitesmoke;
+        }
+
+        nav .logo {
+            float: left
+        }
+
+        nav .navbar {
+            float: left;
+            margin-left: 70px;
+            height: 42px;
+            line-height: 42px;
+        }
+
+        nav li {
+            float: left;
+            padding: 0 15px;
+        }
+
+        li a {
+            text-decoration: none;
+            display: block;
+            color: #000;
+
+        }
+
+        .navbar a:hover {
+            border-bottom: 2px solid skyblue;
+        }
+
+        nav .search {
+            float: right;
+            height: 40px;
+            line-height: 40px;
+            width: 410px;
+            border: 1px solid skyblue;
+        }
+
+        nav .search input[type="text"] {
+            float: left;
+            height: 40px;
+            width: 360px;
+            padding-left: 18px;
+            color: gray
+        }
+
+        nav .search input[type="submit"] {
+            float: left;
+            height: 40px;
+            width: 50px;
+            padding-left: 4px;
+            background-color: skyblue;
+        }
+
+        nav .login {
+            float: right;
+            height: 42px;
+            line-height: 42px;
+            margin-right: 15px;
+            margin-left: 35px;
+        }
+
+        .login img {
+            margin: 0 8px;
+        }
+
+        .login a {
+            text-decoration: none;
+            color: #000
+        }
+
+        .banner {
+            height: 420px;
+            background-color: #1c063c;
+        }
+
+        .banner-in {
+            height: 420px;
+            background: url(http://www.szadvertising.com/img/banner2_20190819_210028.png) 0 0 no-repeat;
+            position: relative;
+
+        }
+
+        .sliderbar {
+            height: 420px;
+            width: 190px;
+            background: rgba(0, 0, 0, 0.3);
+            float: left
+        }
+
+        .sliderbar li a {
+            width: 130px;
+            color: white;
+            display: block;
+            padding: 0 20px;
+            height: 45px;
+            line-height: 45px;
+            font-size: 14px;
+        }
+
+        .sliderbar a:hover {
+            color: skyblue;
+        }
+
+        .sliderbar a span {
+            float: right
+        }
+
+        .timetable {
+            float: right;
+            width: 230px;
+            height: 300px;
+            background-color: whitesmoke;
+            margin-top: 50px;
+        }
+
+        .timetable dt {
+            height: 50px;
+            background-color: skyblue;
+            line-height: 50px;
+            text-align: center;
+            color: snow;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .timetable dd:last-child {
+            border: 0;
+        }
+
+        .timetable dd {
+            margin: 0 auto;
+            width: 200px;
+            height: 60px;
+            border-bottom: 1px solid #ccc;
+            box-sizing: border-box;
+            padding: 10px 15px
+        }
+
+        .timetable dd a {
+            border: 2px solid skyblue;
+            height: 38px;
+            display: block;
+            color: skyblue;
+            text-align: center;
+            line-height: 38px;
+        }
+
+        .timetable dd a:hover {
+            background-color: skyblue;
+            color: white
+        }
+
+        .circle {
+            width: 180px;
+            height: 22px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            margin-left: -90px;
+        }
+
+        .circle li {
+            float: left;
+            width: 12px;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            margin: 6px 8px;
+            cursor:pointer
+
+        }
+
+        .circle .current {
+            width: 19px;
+            background-color: white;
+        }
+
+        .recommend {
+            height: 60px;
+            background-color: #fff;
+            margin-top: 8px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+            line-height: 60px;
+        }
+
+        .recommend a {
+            border-right: 1px solid #ccc;
+            padding: 0 30px;
+            color: black;
+        }
+
+        .recommend a:hover {
+            color: cornflowerblue;
+        }
+
+        .recommend a:first-child {
+            color: cornflowerblue;
+            font-weight: 700;
+        }
+
+        .recommend a:last-child {
+            float: right;
+            color: cornflowerblue;
+            margin-right: 6px;
+            border: 0;
+        }
+
+        .bottom {
+            height: 640px;
+            width: 1200px;
+        }
+
+        .bottom-t {
+            margin-top: 10px;
+            height: 60px;
+            width: 1200px;
+            line-height: 60px;
+        }
+
+        .bottom-t .bl {
+            float: left;
+            letter-spacing: 2px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .bottom-t .br {
+            float: right;
+            margin-right: 30px;
+            font-size: 14px;
+        }
+
+        .bottom-b {
+            width: 1200px;
+            height: 570px;
+            box-sizing: border-box;
+        }
+
+        .bottom-b ul li {
+            float: left;
+            width: 228px;
+            height: 280px;
+            margin: 6px 6px;
+            background-color: #fff;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .bottom-b ul li h4 {
+            font-weight: 500;
+            font-size: 14px;
+            margin: 10px;
+            line-height: 22px;
+        }
+
+        .bottom-b ul li p {
+            font-weight: 500;
+            font-size: 12px;
+            margin: 12px;
+        }
+
+        .bottom-b ul li h4,
+        p {
+            background-color: whitesmoke;
+        }
+
+        .diceng {
+            height: 300px;
+            background-color: #fff;
+            margin-top: 120px;
+            width: 1200px;
+        }
+
+        .diceng .xiazai {
+            margin-top: 10px;
+            width: 400px;
+            float: left;
+        }
+
+        .diceng .xiazai img {
+            margin-bottom: 10px;
+        }
+
+        .diceng .xiazai p {
+            font-size: 14px;
+            background-color: white;
+            color:#999
+        }
+
+        .diceng .xiazai a {
+            margin-top: 10px;
+            display: block;
+            width: 100px;
+            height: 30px;
+            color: skyblue;
+            border: 1px solid skyblue;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .diceng .first {
+            float: right;
+           font-size: 14px;
+        }
+
+        .diceng .second {
+            margin-right: 80px;
+            float: right;
+            font-size: 14px;  
+        }
+
+        .diceng .third {
+
+            float: right;
+            margin-right: 80px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="http://www.szadvertising.com/img/logo.png" alt="">
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">课程</a></li>
+                    <li><a href="">职业规划</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <a href=""><img src="http://www.szadvertising.com/img/user.png
+                " alt="">小土豆</a>
+            </div>
+            <div class="search">
+                <input type="text" value="请输入关键词">
+                <input type="submit"></input>
+            </div>
+
+        </nav>
+    </header>
+    <div class="banner">
+        <div class="banner-in container">
+            <div class="sliderbar">
+                <ul>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                </ul>
+            </div>
+            <dl class="timetable">
+                <dt>我的课程表</dt>
+                <dd>
+                    <p> 继续学习 程序设计语言</p>
+
+                    <p style="font-size: small; color:gray"> 正在学习-适用对象</p>
+                </dd>
+                <dd>
+                    <p> 继续学习 程序设计语言</p>
+
+                    <p style="font-size: small; color:gray"> 正在学习-适用对象</p>
+                </dd>
+                <dd>
+                    <p> 继续学习 程序设计语言</p>
+
+                    <p style="font-size: small; color:gray"> 正在学习-适用对象</p>
+                </dd>
+                <dd>
+                    <a href=""> 全部课程</a>
+
+                </dd>
+
+            </dl>
+            <div class="circle">
+                <ul>
+                    <li class="current "></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="recommend container">
+        <a href="#"> 精品推荐</a>
+        <a href="#">jquery</a>
+        <a href="#">jquery</a>
+        <a href="#">jquery</a>
+        <a href="#">jquery</a>
+        <a href="#">jquery</a>
+        <a href="#">jquery</a>
+        <a href="#">修改兴趣</a>
+
+    </div>
+    <div class="bottom container">
+        <div class="bottom-t">
+            <span class="bl">精品推荐</span>
+            <span class="br">查看全部</span>
+        </div>
+        <div class="bottom-b">
+            <ul>
+                <li>
+                    <img src="http://www.szadvertising.com/img/pic.png" alt="">
+                    <h4> Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span style="color:tomato">高级.</span> 1125人在学习</p>
+                </li>
+                <li>
+                    <img src="http://www.szadvertising.com/img/pic.png" alt="">
+                    <h4> Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span style="color:tomato">高级.</span> 1125人在学习</p>
+                </li>
+                <li>
+                    <img src="http://www.szadvertising.com/img/pic.png" alt="">
+                    <h4> Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span style="color:tomato">高级.</span> 1125人在学习</p>
+                </li>
+                <li>
+                    <img src="http://www.szadvertising.com/img/pic.png" alt="">
+                    <h4> Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span style="color:tomato">高级.</span> 1125人在学习</p>
+                </li>
+                <li>
+                    <img src="http://www.szadvertising.com/img/pic.png" alt="">
+                    <h4> Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span style="color:tomato">高级.</span>1125人在学习</p>
+                </li>
+                <li>
+                    <img src="http://www.szadvertising.com/img/pic.png" alt="">
+                    <h4> Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span style="color:tomato">高级.</span> 1125人在学习</p>
+                </li>
+                <li>
+                    <img src="http://www.szadvertising.com/img/pic.png" alt="">
+                    <h4> Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span style="color:tomato">高级.</span> 1125人在学习</p>
+                </li>
+                <li>
+                    <img src="http://www.szadvertising.com/img/pic.png" alt="">
+                    <h4> Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span style="color:tomato">高级.</span> 1125人在学习</p>
+                </li>
+                <li>
+                    <img src="http://www.szadvertising.com/img/pic.png" alt="">
+                    <h4> Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span style="color:tomato">高级.</span> 1125人在学习</p>
+                </li>
+                <li>
+                    <img src="http://www.szadvertising.com/img/pic.png" alt="">
+                    <h4> Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span style="color:tomato">高级.</span>1125人在学习</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="diceng container">
+        <div class="xiazai">
+            <img src="http://www.szadvertising.com/img/logo.png" alt="">
+            <p>学成在线致力于普及中国最好的教育它与中国一流大学和机构合作提供在线课程
+                2017年XTCG Inc.保留所有权利。-沪ICP备15025210</p>
+            <a href="#">下载app</a>
+        </div>
+        <div class="first">
+            关于学生网<br>
+            关于<br>
+            管理团队<br>
+            工作机会<br>
+            客户服务<br>
+            帮助
+        </div>
+        <div class="second">
+            关于学生网<br>
+            关于<br>
+            管理团队<br>
+            工作机会<br>
+            客户服务<br>
+            帮助
+        </div>
+        <div class="third">
+            关于学生网<br>
+            关于<br>
+            管理团队<br>
+            工作机会<br>
+            客户服务<br>
+            帮助
+        </div>
+    </div>
+</body>
+
+</html>

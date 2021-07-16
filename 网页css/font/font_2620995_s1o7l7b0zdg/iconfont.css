@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2620995 */
+  src: url('iconfont.woff2?t=1624113341065') format('woff2'),
+       url('iconfont.woff?t=1624113341065') format('woff'),
+       url('iconfont.ttf?t=1624113341065') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-card:before {
+  content: "\e62c";
+}
+
+.icon-qian:before {
+  content: "\e640";
+}
+
+.icon-reset:before {
+  content: "\e611";
+}
+
+.icon-icon-test:before {
+  content: "\e614";
+}
+
+.icon-arrowLeft:before {
+  content: "\e65f";
+}
+
+.icon-arrowRight1:before {
+  content: "\e660";
+}
+
+.icon-qiye:before {
+  content: "\e6c6";
+}
+
+.icon-channel:before {
+  content: "\e60f";
+}
+
+.icon-arrowRight:before {
+  content: "\e65d";
+}
+
+.icon-arrowLeft-fill:before {
+  content: "\e65e";
+}
+
+.icon-clock:before {
+  content: "\e600";
+}
+
+.icon-ruler:before {
+  content: "\e62e";
+}
+
+.icon-slots:before {
+  content: "\e630";
+}
+
+.icon-kugou:before {
+  content: "\e632";
+}
+
+.icon-fire:before {
+  content: "\e634";
+}
+
+.icon-route:before {
+  content: "\e635";
+}
+
+.icon-scale:before {
+  content: "\e636";
+}
+

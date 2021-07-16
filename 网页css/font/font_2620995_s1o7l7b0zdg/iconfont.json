@@ -1,0 +1,128 @@
+{
+  "id": "2620995",
+  "name": "demo",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "880427",
+      "name": "卡",
+      "font_class": "card",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "1092161",
+      "name": "钱",
+      "font_class": "qian",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "1135934",
+      "name": "重置",
+      "font_class": "reset",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "1629893",
+      "name": "闹钟",
+      "font_class": "icon-test",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "14835598",
+      "name": "左箭头",
+      "font_class": "arrowLeft",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "14835599",
+      "name": "右箭头",
+      "font_class": "arrowRight1",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "20587141",
+      "name": "企业",
+      "font_class": "qiye",
+      "unicode": "e6c6",
+      "unicode_decimal": 59078
+    },
+    {
+      "icon_id": "22057668",
+      "name": "通道",
+      "font_class": "channel",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "14835595",
+      "name": "右箭头",
+      "font_class": "arrowRight",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "14835597",
+      "name": "左箭头",
+      "font_class": "arrowLeft-fill",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "1201459",
+      "name": "clock",
+      "font_class": "clock",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "22272689",
+      "name": "ruler",
+      "font_class": "ruler",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "22272693",
+      "name": "slots",
+      "font_class": "slots",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "22272708",
+      "name": "kugou",
+      "font_class": "kugou",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "22272713",
+      "name": "fire",
+      "font_class": "fire",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "22272719",
+      "name": "route",
+      "font_class": "route",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "22272721",
+      "name": "scale",
+      "font_class": "scale",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    }
+  ]
+}

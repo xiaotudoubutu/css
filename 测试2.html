@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #000 url(11.jpg) no-repeat top center;
+        }
+        div{
+            width:500px;
+            height: 400px;
+            /* background: rgba(0,0,0,0.5);  背景透明 */
+            background: hotpink url(bc.jpg) no-repeat;
+            /* background-size: 300px 400px;改的url的图片的大小 */
+            /* background-size: 50%;没有失真 */
+            /* background-size: cover; * 保证图片沾满区域，超出部分则隐藏*/
+            background-size: contain; /*图片等比例缩放，保证图片完整*/
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

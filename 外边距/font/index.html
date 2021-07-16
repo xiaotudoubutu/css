@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'iconfont';
+            /* Project id 2620995 */
+            src: url('//at.alicdn.com/t/font_2620995_wyv81h5ydhe.woff2?t=1624111684604') format('woff2'),
+                url('//at.alicdn.com/t/font_2620995_wyv81h5ydhe.woff?t=1624111684604') format('woff'),
+                url('//at.alicdn.com/t/font_2620995_wyv81h5ydhe.ttf?t=1624111684604') format('truetype');
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 1226px;
+            margin: 0 auto
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        input {
+            border: 0
+        }
+
+        .top a {
+
+            color: #b0b0b0;
+        }
+
+        .top a:hover {
+            color: azure
+        }
+
+        .top {
+            height: 40px;
+            background-color: #333;
+            color: #b0b0b0;
+            font-size: 12px;
+            line-height: 40px;
+            padding-left: 12px;
+        }
+
+        .top-l li {
+            float: left;
+        }
+
+        .top-r li {
+            float: right;
+        }
+
+        .top a {
+            text-decoration: none;
+            color: #b0b0b0;
+            margin: 0 7.2px;
+        }
+
+        .top a:hover {
+            color: azure;
+        }
+
+        .top span {
+            color: #424242;
+        }
+
+        .top-g {
+            width: 120px;
+            float: right;
+            background-color: #424242;
+            height: 40px;
+            text-align: center;
+            margin-left: 7.2px;
+        }
+
+        .top-g:hover {
+            background-color: white;
+        }
+
+        .top-g a:hover {
+            color: #ff6700
+        }
+
+        .header {
+            height: 100px;
+            position: relative
+        }
+
+        .header-l {
+            line-height: 100px;
+        }
+
+        .header-l img {
+            position: absolute;
+            top: 50%;
+            margin-top: -28px;
+            float: left;
+            width: 56px;
+            height: 56px;
+        }
+
+        .header-c {
+            margin-left: 157px;
+            padding: 0 15px;
+        }
+
+        .header-c li {
+            float: left;
+            line-height: 100px;
+            margin: 0 10px
+        }
+
+        .header-c a {
+            color: #333;
+            font-size: 16px;
+        }
+
+        .header-c a:hover {
+            color: #ff6700
+        }
+
+        .header-r {
+            width: 297px;
+            float: right;
+            margin-left: -30px;
+            height: 50px;
+            line-height: 50px;
+            border: 1px solid #e0e0e0;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -25px;
+        }
+
+        .header-r input[type="text"] {
+            height: 50px;
+            float: left;
+            width: 245px;
+            box-sizing: border-box;
+            padding-left: 16px;
+        }
+
+        .header-r input[type="submit"] {
+            height: 50px;
+            float: left;
+            width: 52px;
+            box-sizing: border-box;
+            padding: 0 6px;
+        }
+
+        .header-r input[type="submit"]:hover {
+            background-color: #ff6700
+        }
+
+        .main-one {
+            height: 460px;
+            position: relative;
+        }
+
+        .main-one .sliderbar {
+            box-sizing: border-box;
+            position: absolute;
+            height: 460px;
+            width: 234px;
+            background: rgba(105, 101, 101, .6);
+        }
+
+        .main-one .sliderbar li {
+            height: 42px;
+            line-height: 42px;
+            padding-left: 30px;
+        }
+
+        .main-one .sliderbar li:first-child {
+            margin-top: 15px;
+        }
+
+        .main-one .sliderbar li:hover {
+            background-color: #ff6700
+        }
+
+        .main-one .sliderbar li a {
+            color: #fff;
+            font-size: 14px
+        }
+
+        .main-one .sliderbar li span {
+            position: absolute;
+            right: 0;
+            font-weight: bold;
+            padding-right: 15px;
+        }
+
+        .main-one .circle {
+            position: absolute;
+            width: 400px;
+            height: 21px;
+            float: left;
+            bottom: 0;
+            left: 50%;
+        }
+
+        .main-one .circle li {
+            float: left;
+            width: 10px;
+            height: 10px;
+            background-color: #757575;
+            border-radius: 50%;
+            margin: 6px 8px;
+        }
+
+        .main-one .circle .current {
+            background-color: white
+        }
+
+        .main-one .left,
+        .main-one .right {
+            font-size: xx-large;
+            position: absolute;
+            color: white
+        }
+
+        .main-one .left {
+            margin-left: 234px;
+            top: 50%;
+        }
+
+        .main-one .right {
+            right: 0;
+            top: 50%;
+        }
+
+        .main-two {
+            margin-top: 10px;
+            height: 200px;
+            position: relative;
+        }
+
+        .main-two-l {
+            box-sizing: border-box;
+            float: left;
+            width: 234px;
+            height: 170px;
+            background-color: #5F5750;
+            margin-right: 14px;
+            padding-left: 2px;
+        }
+
+        .main-two-l li {
+            box-sizing: border-box;
+            width: 76px;
+            height: 82px;
+            float: left;
+            color: #fff;
+            padding-left: 5px;
+
+        }
+
+        .main-two-l li p {
+            width: 70px;
+            height: 46px;
+            font-size: 14px;
+            padding-top: 18px;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        .main-two-l li .aa {
+            font-size: 20px;
+        }
+
+        .main-two-r {
+            width: 978px;
+            float: right;
+            box-sizing: border-box;
+        }
+
+        .main-two-r img {
+            width: 316px;
+            float: right;
+            margin-right: 15px;
+
+        }
+
+        .main-two-r img:first-child {
+            margin-right: 0px
+        }
+
+        .main-three {
+            height: 398px;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="container">
+            <div class="top-l container">
+                <ul>
+                    <li><a href=""> 小米商城</a><span>|</span></li>
+                    <li><a href="">MIUI</a> <span>|</span></li>
+                    <li><a href="">IoT</a> <span>|</span></li>
+                    <li><a href="">云服务</a><span>|</span> </li>
+                    <li><a href="">天星数科</a><span>|</span> </li>
+                    <li><a href="">有品</a><span>|</span></li>
+                    <li> <a href="">小爱开放平台</a><span>|</span></li>
+                    <li> <a href="">企业团购</a><span>|</span> </li>
+                    <li> <a href="">资质证照</a> <span>|</span></li>
+                    <li> <a href="">协议规则</a><span>|</span> </li>
+                    <li> <a href="">下载小米商城APP</a><span>|</span></li>
+                    <li> <a href="">智能生活</a> <span>|</span></li>
+                    <li> <a href="">Select Location</a></li>
+                </ul>
+            </div>
+            <div class="top-g container">
+                <a href="">购物车(0)</a>
+            </div>
+            <div class="top-r container">
+                <ul>
+                    <li><a href="">消息通知</a><span>|</span></li>
+                    <li><a href="">注册</a><span>|</span></li>
+                    <li><a href="">登录</a><span>|</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header container">
+        <div class="header-l">
+            <img src="https://s02.mifile.cn/assets/static/image/logo-mi2.png" alt="">
+        </div>
+        <div class="header-c">
+            <ul>
+                <li><a href="">小米手机</a></li>
+                <li><a href="">红米手机</a></li>
+                <li><a href="">电视</a></li>
+                <li><a href="">笔记本</a></li>
+                <li><a href="">家电</a></li>
+                <li><a href="">路由器</a></li>
+                <li><a href="">智能硬件</a></li>
+                <li><a href="">服务</a></li>
+                <li><a href="">社区</a></li>
+            </ul>
+        </div>
+        <div class="header-r">
+            <input type="text" placeholder="空调">
+            <input type="submit">
+        </div>
+    </div>
+    <div class="main-one container">
+
+        <div class="sliderbar">
+            <ul>
+                <li><a href="">手机 电话卡 <span>></span></a></li>
+                <li><a href=""> 电视 盒子<span>></span></a> </li>
+                <li><a href="">笔记本 显示器<span>></span></a> </li>
+                <li><a href="">家电 插线板 <span>></span></a> </li>
+                <li><a href="">出行 穿戴 <span>></span></a> </li>
+                <li><a href="">智能 路由器<span>></span></a></li>
+                <li><a href="">电源 配件 <span>></span></a></li>
+                <li><a href="">健康 儿童<span>></span></a></li>
+                <li><a href="">耳机 音箱<span>></span></a></li>
+                <li><a href="">生活 箱包<span>></span></a></li>
+            </ul>
+        </div>
+
+        <div class="show">
+            <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1c3e97686468231f3f78048d7f2b7fdc.jpg?thumb=1&w=1226&h=460&f=webp&q=90">
+        </div>
+
+        <div class="circle">
+            <ul>
+                <li></li>
+                <li class="current"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="left">
+            <div class="right">></div>
+        </div>
+
+    </div>
+
+    <div class="main-two container">
+        <div class="main-two-l">
+            <ul>
+                <li>
+                    <p><span class="iconfont aa ">&#xe600;</span><br>小米秒杀</p>
+                </li>
+                <li>
+                    <p><span class="iconfont aa ">&#xe630;</span><br>企业团购 </p>
+                </li>
+                <li>
+                    <p><span class="iconfont aa ">&#xe634;</span><br>F码通道</p>
+                </li>
+                <li>
+                    <p><span class="iconfont aa ">&#xe636;</span><br> 米粉卡</p>
+                </li>
+                <li>
+                    <p><span class="iconfont aa ">&#xe636;</span><br> 以旧换新</p>
+                </li>
+                <li>
+                    <p><span class="iconfont aa ">&#xe62e;</span><br>话费充值 </p>
+                </li>
+            </ul>
+        </div>
+        <div class="main-two-r">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5d4298059889417157e8492750328492.jpg?w=632&h=340"
+                alt="">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b30177d629bfbe2fb42251c1b8538f7b.jpg?w=632&h=340"
+                alt="">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9f18ac756fa2cedb16ea429b9c0001af.png?w=632&h=340"
+                alt="">
+        </div>
+    </div>
+
+    <div class="main-three container">
+        <div class="guide">
+            <span>小米秒杀</span>
+            <span>
+                <div>
+                    <span class="iconfont aa ">&#xe65d;</span>
+                    <span class="iconfont aa ">&#xe65e;</span>
+                </div>
+            </span>
+        </div>
+        <div class="jiaju">
+
+        </div>
+    </div>
+</body>
+
+</html>

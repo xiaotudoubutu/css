@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            width: 1000px;
+            height: 150px;
+            margin: 5px auto;
+        }
+        header img{
+            width: 100%;
+            height: 100%;;
+        }
+        main{
+            width: 1000px;  
+            margin: 0 auto;           
+        }
+        main .row{
+            width: 100%;
+            height: 120px; 
+            display: flex;
+            margin-bottom: 1px;
+        }
+        main .row:nth-child(1){
+            background-color: crimson;
+            border-radius: 20px;
+        }
+        main .row div{
+                flex:1;  
+                border:1px solid white;
+                 
+        }
+        main .row div:nth-child(2){
+            flex-direction: column;
+            display: flex;
+            text-align: center;
+            line-height: 60px;
+        }
+        main .row div:nth-child(3){ 
+            flex-direction: column;
+            display: flex;
+            text-align: center;
+            line-height: 60px;
+        }
+        main .row:nth-child(2){
+            background-color:skyblue;      
+            border-radius: 20px;
+        }
+       
+        main .row:nth-child(3){
+            background-color:orangered;
+
+            border-radius: 20px;
+        }
+        main .row:nth-child(3) div:nth-child(1){
+            flex-direction: column;
+            display: flex;
+            text-align: center;
+            line-height: 60px;
+        } */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            min-width: 320px;
+            max-width:540px;
+            margin: 0 auto;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+        }
+        header img{
+            width: 100%;
+            height: 100%;
+        }
+        nav{
+            padding:5px
+        }
+        .row{
+            height: 90px;
+            width: 100%;
+            background-color: thistle;
+            border-radius: 8px;
+            display: flex;
+        }
+        .row3{
+            flex:1;
+            border-left: 1px solid #fff;
+        }
+        .row div:first-child{
+            border :0;
+        }
+        .hotel{
+            display: flex;
+            flex-direction: column;
+        }
+        .hotel a{
+            flex:1;
+            font-size: 18px;
+            color:#fff;
+            text-align: center;
+            line-height: 45px;
+            text-decoration: none;
+        }
+        .hotel a:nth-child(1){
+            border-bottom:1px solid #fff ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://dimg04.c-ctrip.com/images/0zg1f120008pzmfzl19EA.jpg"  height="154" width="768" alt="">
+    </header>
+    <nav>
+       <div class="row">
+           <div class="row3"></div>
+           <div class="row3 hotel">
+             <a href="">海外酒店</a>
+             <a href="">特价酒店</a>
+           </div>
+           <div class="row3 hotel">
+            <a href="">海外酒店</a>
+            <a href="">特价酒店</a>
+           </div>
+       </div>
+    </nav>
+</body>
+</html>

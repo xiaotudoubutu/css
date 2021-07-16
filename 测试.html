@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            background-image: url(11.jpg);
+            background-repeat: no-repeat;/*(有可能图片放不下，只出现一部分) */
+            background-position:  -500px center;
+            background-attachment: fixed;
+            /* background: #000 url() no-repeat fixed center -25px;  简写 */
+        }
+        .nav a {
+            color: blue;
+        }
+
+        .site-r a {
+            color: red;
+        }
+
+        .nav,
+        .sitenav {
+            font-size: 14px;
+            font-family: "微软雅黑";
+        }
+
+        .nav>ul>li>a {
+            color: green;
+        }
+        div[class^=font]{  /*表示font开始位置*/
+            color:pink
+        }
+        div[class$=footer]{/*表示footer结束位置*/
+            color:skyblue
+        }
+        div[class*=tao]{/*表示tao在任意位置都可以*/
+            color:green
+        }
+        p::first-letter{
+            color:red;
+            font-size:50px
+        }
+        p::first-line{
+            color:green
+        }
+        p::selection{
+            color:pink
+        }
+        p::before{
+            content:"我"
+        }
+        p::after{
+            content:"90岁"
+        }
+        .pink{
+            width: 600px;
+            height: 600px;
+            background-color: pink;
+            background-image: url(bc.jpg);
+            background-repeat: no-repeat;
+            /*1. background-position: center;   利用 方位名词top，bottom更改背景图片的位置，如果方位名词只有一个，另外一个默认center */
+            /*2. background-position: 30px 10px ;/*精确单位，第一个x坐标，第二个y坐标*/
+            /* background-position: 10px center;    混搭*/
+        } 
+        .p{
+            font-size: 50px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="">公司首页</a></li>
+            <li><a href="">公司简介</a></li>
+            <li><a href="">公司产品</a></li>
+            <li>
+                <a href="">联系我们</a>
+                <ul>
+                    <li><a href="">公司邮箱</a></li>
+                    <li><a href="">公司电话</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="sitenav">
+        <div class="site-l">左侧侧导航栏</div>
+        <div class="site-r"><a href="">登录</a></div>
+    </div>
+    <div class="font12">属性选择器</div>
+    <div class="font24">属性选择器</div>
+    <div class="font24">属性选择器</div>
+    <div class="font12">属性选择器</div>
+    <div class="sub-footer">属性选择器</div>
+    <div class="jd-footer">属性选择器</div>
+    <div class="news-tao-nav">属性选择器</div>
+    <div class="news-tao-header">属性选择器</div>
+    <div class="tao-header">属性选择器</div>
+
+
+    <div>
+        <p>新增1号无症状感染者，男，11岁，为26日确诊病例1的同班同学。5月26日被甄别为密切接触者并转运至定点酒店隔离观察；当天17时初筛阳性；市疾控中心复核检测结果阳性后，转市八医院隔离治疗，28日诊断为无症状感染者。</p>
+        
+    </div>
+
+    <div class="pink">
+
+    </div>
+    <div class="p">
+        <div>hh</div>
+        <div>hh</div>
+        <div>hh</div>
+        <div>hh</div>
+        <div>hh</div>
+    </div>
+    
+</body>
+
+</html>

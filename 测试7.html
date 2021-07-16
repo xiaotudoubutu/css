@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+       ul{
+           list-style: none;
+       }
+        .zong {
+            width: 238px;
+            height: 294px;
+            border: 1px solid #ccc;
+            border-top: 3px solid chocolate;
+        }
+        .one{
+           height: 35px;
+           line-height:35px ;
+           border-bottom: 1px solid #ccc;
+           padding-left: 12px;  /*不会撑开盒子，因为继承了父亲的宽度，本身没有宽度*/
+        }
+        img{
+            width: 200px;
+            border:1px solid #ccc;
+           margin:12px;
+        }
+        ul{
+            margin-left: 12px;
+        }
+        li{
+            padding-left: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="zong">
+        <div class="one">搜索趣图</div>
+        <div><img src="bc.jpg" alt=""></div>
+        <ul>
+            <li>量子传输</li>
+            <li>太空理论</li>
+            <li>遭遇太阳风暴</li>
+        </ul>
+    </div>
+</body>
+
+</html>

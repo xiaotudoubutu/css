@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* section {
+            width: 900px;
+            height: 300px;
+            margin: 200px auto;
+            background: pink;
+        }
+
+        div {
+            float: left;
+            width: 33%;
+            height: 100%;
+        }
+
+        div:nth-child(1) {}
+
+        div:nth-child(2) {
+            background: purple;
+        } */
+   /* 传统的加上margin容易掉下来，因为margin占位置 */
+   *{
+       margin: 0;
+       padding: 0;
+
+   }
+        ul {
+            width: 900px;
+            height: 300px;
+            margin: 200px auto;
+            display: flex;
+            border: 1px solid pink;
+            min-width: 600px;
+        }
+
+        li {
+            height: 100%;      
+        }
+
+        li:nth-child(1) { 
+            background: pink;
+            flex:1;
+        }
+
+        li:nth-child(2) {
+            background: purple;
+            flex: 1;
+        }
+
+        li:nth-child(3) {
+            background: pink;
+            flex: 1;
+        
+        }
+    </style>
+</head>
+
+<body>
+    
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+
+</html>

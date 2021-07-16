@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .hh {
+            width: 520px;
+            height: 280px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .left,
+        .right {
+            position: absolute;
+            width: 24px;
+            height: 36px;
+            top: 50%;
+            display: block;
+            margin-top: -18px;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0
+        }
+        .circle{
+            width: 65px;
+            height: 13px;
+            background:rgba(255,255,255,0.3);
+            position: absolute;
+            bottom:15px;
+            left:50%;
+            margin-left: -32.5px;
+            border-radius: 25px;
+        }
+        .circle li{
+            width: 9px;
+            height: 9px;
+            float:left;
+            background-color:red;
+            margin: 2px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hh">
+        <img src="https://aecpm.alicdn.com/simba/img/TB1XotJXQfb_uJkSnhJSuvdDVXa.jpg" alt="">
+        <div class="left"><a href="#" ><img src="left.png" alt=""></a></div>
+        <div class="right"><a href="#" ><img src="right.png" alt=""></a></div>
+        <ul class="circle">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {      
+            width: 500px;
+            height: 300px;
+            position: relative;  
+            background: url(me.jpg)  ;
+            background-size: cover;
+            margin:100px auto;
+            perspective: 1000px;
+        }     
+        .left , .right{
+            position: absolute;
+            top:0;
+            width:50%;
+            height: 100%;
+            background-color:pink;
+        }
+        .left{
+             left:0;
+             border:1px solid red;
+             transition:all 1s  ;
+             transform-origin: left ;
+        }
+        .right{
+            right:0;
+            border:1px solid red;
+            transition:all 1s  ;
+            transform-origin: right;
+
+        }
+        .left::before ,
+        .right::before{
+            content:"";
+            position:absolute;
+            top:50%;       
+            transform:translateY(-50%);
+            border:1px solid red;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        .left::before{
+            right:8px;
+        }
+        .right::before{
+            left:8px;
+        }
+        section:hover .left{
+            transform:rotateY(-135deg);        
+        }
+        section:hover .right{
+            transform:rotateY(135deg);
+           
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="left"></div>
+        <div class="right"></div>
+    </section>
+</body>
+</html>
